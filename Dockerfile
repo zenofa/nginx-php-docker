@@ -10,25 +10,25 @@ RUN wget --no-check-certificate -O - https://download.newrelic.com/548C16BF.gpg 
     apt-get update && \
     apt-get -y --no-install-recommends install \
 		exim4 \
-		php7.3 \
-		php7.3-cli \
-		php7.3-curl \
-        php7.3-fpm \
-		php7.3-gd \
-		php7.3-imagick \
-		php7.3-imap \
-        php7.3-intl \
-        php7.3-mbstring \
-        php7.3-mysql \
-        php7.3-memcached \
-        php7.3-memcache \
-        php7.3-recode \
-        php7.3-redis \
-        php7.3-soap \
-		php7.3-xdebug \
-		php7.3-xml \
-		php7.3-xsl \
-		php7.3-zip \
+		php7.1 \
+		php7.1-cli \
+		php7.1-curl \
+        php7.1-fpm \
+		php7.1-gd \
+		php7.1-imagick \
+		php7.1-imap \
+        php7.1-intl \
+        php7.1-mbstring \
+        php7.1-mysql \
+        php7.1-memcached \
+        php7.1-memcache \
+        php7.1-recode \
+        php7.1-redis \
+        php7.1-soap \
+		php7.1-xdebug \
+		php7.1-xml \
+		php7.1-xsl \
+		php7.1-zip \
 		newrelic-php5 && \
     newrelic-install install && \
 	apt-get clean && \
@@ -40,7 +40,7 @@ RUN mkdir /root/bin/ && \
 EXPOSE 443
 EXPOSE 8080
 
-ENV PHP_VERSION 7.3
+ENV PHP_VERSION 7.1
 
 ENV DEFAULT_ADMIN_EMAIL nobody@example.com
 ENV DEFAULT_APP_ENV production
